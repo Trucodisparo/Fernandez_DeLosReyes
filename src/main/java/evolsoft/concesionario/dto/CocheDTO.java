@@ -82,7 +82,4 @@ public class CocheDTO {
 		this.precio = precio;
 	}
 
-@Query(value = "select c from Coche c where c.fechaVenta is null") 
-public List<Coche> findCarsInStock(); 
-
 }
