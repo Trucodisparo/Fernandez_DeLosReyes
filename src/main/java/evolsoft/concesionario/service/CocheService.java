@@ -30,4 +30,6 @@ public interface CocheService {
 	
 	public List<CocheDTO> findCochesInStock();
 	
+	void createList(List<CocheDTO> listCocheDto);
+	
 }
