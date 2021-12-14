@@ -123,6 +123,11 @@ public class CocheServiceImpl implements CocheService {
 			});
 		return cochesInStock;
 	}
+	
+	@Override
+	public void createList(List<CocheDTO> listCocheDto) {
+		listCocheDto.forEach(cocheDTO -> cocheDAO.save(map(cocheDTO)));
+	}
 
 	@Override
 	public void newSell(Integer idCoche, Integer idCliente, Integer idVendedor) throws NotFoundExcept {

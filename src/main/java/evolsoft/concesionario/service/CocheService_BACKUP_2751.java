@@ -32,5 +32,12 @@ public interface CocheService {
 
 	void newSell(Integer idCoche, Integer idCliente, Integer idVendedor) throws NotFoundExcept;
 
+<<<<<<< HEAD
 	void createList(List<CocheDTO> listCocheDto);
+
+=======
+	
+	void createList(List<CocheDTO> listCocheDto);
+	
+>>>>>>> 2bfd22146355363d884093102f0d4b6b6ccf1686
 }
